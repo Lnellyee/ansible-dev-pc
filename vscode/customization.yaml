@@ -8,39 +8,60 @@
       args:
         creates: ~/.vscode/extensions/{{ item }}-*/package.json
       loop:
-        - streetsidesoftware.code-spell-checker           # Code Spell Checker
-        - editorconfig.editorconfig                       # EditorConfig for VS Code
-        - thenikso.github-plus-theme                      # GitHub Plus Theme
-        - ms-vsliveshare.vsliveshare-pack                 # Live Share Extension Pack
-        - pkief.material-icon-theme                       # Material Icon Theme
-        - eamodio.toggle-excluded-files                   # Toggle Excluded Files
-        - pflannery.vscode-versionlens                    # Version Lens
-        - visualstudioexptteam.vscodeintellicode          # Visual Studio IntelliCode
-        - ms-vscode-remote.vscode-remote-extensionpack    # Remote Development
-        - auiworks.amvim                                  # vim
-        - coenraads.bracket-pair-colorizer-2
-        - vmsynkov.colonize
-        - ryanluker.vscode-coverage-gutters
-        - aeschli.vscode-css-formatter
-        - mikestead.dotenv
-        - grapecity.gc-excelviewer
-        - sleistner.vscode-fileutils
-        - mkxml.vscode-filesize
-        - ee92.folderize
-        - davidanson.vscode-markdownlint
-        - ibm.output-colorizer
-        - bradlc.vscode-tailwindcss
-        - ryu1kn.partial-diff
-        - taoklerks.poor-mans-t-sql-formatter-vscode
+        - ahmadawais.shades-of-purple
+        - akamud.vscode-theme-onelight
+        - andrewmarkle.primer-light
+        - anseki.vscode-color
+        - bierner.markdown-preview-github-styles
         - chrmarti.regex
-        - shan.code-settings-sync
+        - DavidAnson.vscode-markdownlint
+        - dbaeumer.vscode-eslint
+        - DotJoshJohnson.xml
+        - eamodio.gitlens
+        - EditorConfig.EditorConfig
+        - Equinusocio.vsc-material-theme
+        - equinusocio.vsc-material-theme-icons
+        - esbenp.prettier-vscode
+        - fabiospampinato.vscode-diff
+        - fayras.simple-new-file
+        - felipecaputo.git-project-manager
+        - GitHub.vscode-pull-request-github
+        - googlecloudtools.cloudcode
+        - Horla.horla-light-theme
+        - Hyzeta.vscode-theme-github-light
+        - idleberg.hopscotch
+        - johnpapa.vscode-peacock
+        - johnpapa.winteriscoming
+        - karigari.chat
+        - liviuschera.noctis
+        - mechatroner.rainbow-csv
+        - mkxml.vscode-filesize
+        - ms-azuretools.vscode-docker
+        - ms-dotnettools.csharp
+        - ms-mssql.mssql
+        - ms-python.anaconda-extension-pack
+        - ms-python.python
+        - ms-vscode.atom-keybindings
+        - ms-vscode.vscode-typescript-tslint-plugin
+        - ms-vsliveshare.vsliveshare
+        - ms-vsliveshare.vsliveshare-audio
+        - ms-vsliveshare.vsliveshare-pack
+        - naumovs.color-highlight
+        - PKief.material-icon-theme
+        - qinjia.seti-icons
+        - rbbit.typescript-hero
+        - redhat.vscode-yaml
         - richie5um2.vscode-sort-json
-        - mauve.terraform
-        - ms-vscode.wordcount
-        - dotjoshjohnson.xml
-        - slevesque.vscode-zipexplorer
-        - wart.ariake-dark
+        - streetsidesoftware.code-spell-checker
+        - teabyii.ayu
+        - uloco.theme-bluloco-light
+        - VisualStudioExptTeam.vscodeintellicode
+        - vmsynkov.colonize
         - vscode-icons-team.vscode-icons
+        - vscodevim.vim
+        - whizkydee.material-palenight-theme
+        - wmaurer.change-case
+        - ziishaned.livereload
 
     - name: Ensure ~/.config folder exists
       file:
