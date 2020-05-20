@@ -1,185 +1,372 @@
 {
-    // Text Editor
-    "editor.accessibilitySupport": "off",
-    "editor.cursorBlinking": "expand",
-    "editor.fontFamily": "SauceCodePro Nerd Font",
-    "editor.fontLigatures": true,
-    "editor.fontSize": 15,
-    "editor.formatOnPaste": true,
-    "editor.formatOnType": true,
-    "editor.matchBrackets": "never",
-    "editor.minimap.enabled": false,
-    "editor.multiCursorModifier": "alt",
-    "editor.parameterHints.cycle": true,
-    "editor.renderControlCharacters": true,
-    "editor.renderWhitespace": "boundary",
-    "editor.rulers": [ 120 ],
-    "editor.showFoldingControls": "always",
-    "editor.smoothScrolling": true,
-    "editor.tabCompletion": "on",
-    "editor.tabSize": 2,
-    "editor.wordWrapColumn": 120,
-
-    "[html]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
+  "[markdown]": {
+    "editor.quickSuggestions": false,
+    "editor.wordWrap": "on",
+    "files.trimTrailingWhitespace": false
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[yaml]": {
+    "editor.defaultFormatter": "googlecloudtools.cloudcode"
+  },
+  "atomKeymap.promptV3Features": true,
+  "cSpell.userWords": [
+    "AGOL",
+    "AGRC's",
+    "Avenir",
+    "BANKVEG",
+    "BEDR",
+    "BOUL",
+    "Basemap",
+    "CSVs",
+    "Centerpoints",
+    "Choo",
+    "DEPMAX",
+    "DOGM",
+    "DOVR",
+    "DUND",
+    "Debounced",
+    "Developable",
+    "Dojo's",
+    "EPSG",
+    "Esri's",
+    "Evented",
+    "FILEGDB",
+    "FRUITLAND",
+    "Farmington",
+    "GEOGCS",
+    "GRAV",
+    "GUIDs",
+    "Geocode",
+    "Geodatabase",
+    "Geoprocessor",
+    "Gruntfile",
+    "Heber",
+    "JSAPI",
+    "LGWD",
+    "Lyft",
+    "Multipoint",
+    "OBJECTID",
+    "ODBC",
+    "OPERCLE",
+    "PRIMEM",
+    "PROJCS",
+    "Padder",
+    "Preact",
+    "QGIS",
+    "QUICKLUBE",
+    "RUBB",
+    "RUNA",
+    "React's",
+    "Resizer",
+    "SEVIER",
+    "SGID",
+    "SITLA",
+    "SPNG",
+    "Shapefile",
+    "TLDR",
+    "TMDL",
+    "TOWGS",
+    "Taylorsville",
+    "Topo",
+    "Trailheads",
+    "UBBMAP",
+    "UDOT",
+    "UNPKG",
+    "Uintah",
+    "Unmount",
+    "Vue's",
+    "WASM",
+    "WMTS",
+    "agrc",
+    "aprx",
+    "apsl",
+    "arcgis",
+    "arcgisinput",
+    "arcgisonline",
+    "arcgispro",
+    "arcgisserver",
+    "arcgissystem",
+    "arcmap",
+    "arcpy",
+    "autofetch",
+    "basemaps",
+    "bbecon",
+    "bluffdale",
+    "browserslist",
+    "cadastre",
+    "camelcase",
+    "checkboxes",
+    "clsx",
+    "code",
+    "comboboxes",
+    "conda",
+    "dataentry",
+    "dgrid",
+    "dijit",
+    "dojox",
+    "dropdown",
+    "dropoff",
+    "dstore",
+    "dwrapps",
+    "dwrefdb",
+    "ebike",
+    "electrofishing",
+    "ellipsize",
+    "entypo",
+    "escaperegexp",
+    "esri",
+    "esrijs",
+    "favico",
+    "fgdb",
+    "fira",
+    "fleetandroid",
+    "gcloud",
+    "gdbs",
+    "geodatabases",
+    "geojson",
+    "geolocation",
+    "geoprocessing",
+    "gitignore",
+    "gitlabs",
+    "glyphicon",
+    "gtag",
+    "hacky",
+    "haspopup",
+    "hucs",
+    "ijit",
+    "integrated",
+    "iphone",
+    "isfile",
+    "jimu",
+    "jsreporter",
+    "ladda",
+    "layerid",
+    "lifecycle",
+    "liveshare",
+    "localforage",
+    "lods",
+    "lyrx",
+    "mapserv",
+    "mixin",
+    "mixins",
+    "mkdir",
+    "multiprocess",
+    "myserver",
+    "nonwritable",
+    "noopener",
+    "noreferrer",
+    "noreply",
+    "openssl",
+    "overlayed",
+    "papaparse",
+    "pausable",
+    "performant",
+    "polyfill",
+    "polyline",
+    "prepend",
+    "processhtml",
+    "proxying",
+    "pydash",
+    "pyodbc",
+    "pypyodbc",
+    "pystache",
+    "pytest",
+    "repo",
+    "repos",
+    "reproject",
+    "reprojecting",
+    "requestip",
+    "retina",
+    "rewiremock",
+    "rgba",
+    "rmtree",
+    "scrollback",
+    "sddraft",
+    "sddrafts",
+    "shutil",
+    "smpt",
+    "smtp",
+    "sortby",
+    "spinjs",
+    "sshexec",
+    "stdavis",
+    "storyshots",
+    "stubmodule",
+    "styl",
+    "sublayers",
+    "submodules",
+    "svgext",
+    "symlink",
+    "tabindex",
+    "templated",
+    "terminal",
+    "textbox",
+    "textboxes",
+    "tomwayson",
+    "tqdm",
+    "typeahead",
+    "ugswaterchemistry",
+    "unimodules",
+    "uniqwith",
+    "unmock",
+    "utahdfo",
+    "uuidv",
+    "waypoint",
+    "webhook",
+    "webm",
+    "webp",
+    "wfrc",
+    "whitespaces",
+    "widget's",
+    "wkid",
+    "wkids",
+    "woff",
+    "wwwroot",
+    "xdescribe",
+    "xmax",
+    "xmin",
+    "xstyle",
+    "yapf",
+    "ymax",
+    "ymin",
+    "zipfile"
+  ],
+  "editor.acceptSuggestionOnCommitCharacter": false,
+  "editor.acceptSuggestionOnEnter": "smart",
+  "editor.cursorSurroundingLines": 5,
+  "editor.fontFamily": "'Victor Mono', 'Fira Code Retina', 'Consolas'",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 16,
+  "editor.fontWeight": "600",
+  "editor.minimap.enabled": false,
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.renderWhitespace": "boundary",
+  "editor.rulers": [
+    120
+  ],
+  "editor.suggestSelection": "first",
+  "editor.tabSize": 2,
+  "eslint.options": {
+    "rules": {
+      "eol-last": 0,
+      "no-trailing-spaces": 0
+    }
+  },
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "files.associations": {
+    "*.pyt": "python"
+  },
+  "files.defaultLanguage": "${activeEditorLanguage}",
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
+  "git.autofetch": true,
+  "git.confirmSync": false,
+  "git.enableSmartCommit": true,
+  "gitProjectManager.baseProjectsFolders": [
+    "/Users/stdavis/Documents/Projects"
+  ],
+  "gitProjectManager.checkRemoteOrigin": false,
+  "gitProjectManager.ignoredFolders": [
+    "node_modules",
+    "src",
+    "_src",
+    "dist",
+    "build"
+  ],
+  "gitProjectManager.maxDepthRecursion": 2,
+  "gitProjectManager.searchInsideProjects": false,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "liveshare.audio.joinCallBehavior": "accept",
+  "liveshare.audio.startCallOnShare": true,
+  "mssql.connections": [
+    {
+      "authenticationType": "Integrated",
+      "database": "ELECTROFISHING",
+      "password": "",
+      "profileName": "Electrofishing_Local",
+      "server": "(local)"
+    }
+  ],
+  "peacock.favoriteColors": [
+    {
+      "name": "Angular Red",
+      "value": "#b52e31"
     },
-    "[typescript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    {
+      "name": "Auth0 Orange",
+      "value": "#eb5424"
     },
-    "[javascript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    {
+      "name": "Azure Blue",
+      "value": "#007fff"
     },
-    "[jsonc]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    {
+      "name": "C# Purple",
+      "value": "#68217A"
     },
-    "[json]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    {
+      "name": "Gatsby Purple",
+      "value": "#639"
     },
-
-    "files.autoSave": "onWindowChange",
-    "files.defaultLanguage": "markdown",
-    "files.insertFinalNewline": true,
-    "files.trimFinalNewlines": true,
-    "files.trimTrailingWhitespace": true,
-    "telemetry.enableCrashReporter": false,
-    "telemetry.enableTelemetry": false,
-
-    "window.zoomLevel": 0,
-
-    // Explorer
-    "explorer.confirmDelete": false,
-    "explorer.openEditors.visible": 0,
-
-    "extensions.autoUpdate": true,
-    "extensions.ignoreRecommendations": false,
-
-    // Workbench
-    "workbench.iconTheme": "eq-material-theme-icons",
-    "debug.onTaskErrors": "showErrors",
-
-    // Terminal
-    "terminal.integrated.shell.windows": "cmd.exe",
-    "terminal.integrated.shellArgs.windows": [ "/K", "C:\\dev\\cmder\\vendor\\init.bat" ],
-    "terminal.integrated.copyOnSelection": true,
-    "terminal.integrated.cursorBlinking": true,
-    "terminal.integrated.inheritEnv": false,
-
-    "workbench.colorTheme": "Ariake Dark",
-    "workbench.colorCustomizations": {
-        "statusBar.background": "#2A2D37",
-        "statusBar.noFolderBackground": "#2A2D37",
-        "statusBar.debuggingBackground": "#2A2D37"
+    {
+      "name": "Go Cyan",
+      "value": "#5dc9e2"
     },
-    "workbench.sideBar.location": "right",
-    "workbench.startupEditor": "newUntitledFile",
-
-    // c#
-    "csharp.suppressDotnetRestoreNotification": true,
-    "csharp.unitTestDebuggingOptions": {
-      "justMyCode": true
+    {
+      "name": "Java Blue-Gray",
+      "value": "#557c9b"
     },
-
-    "dotnet-test-explorer.autoExpandTree": true,
-    "dotnet-test-explorer.autoWatch": true,
-    "dotnet-test-explorer.enableTelemetry": false,
-
-    "omnisharp.enableEditorConfigSupport": true,
-    "omnisharp.enableRoslynAnalyzers": true,
-    "omnisharp.path": "latest",
-    "omnisharp.useGlobalMono": "auto",
-
-    // js
-    "javascript.updateImportsOnFileMove.enabled": "always",
-
-    // python
-    "python.linting.enabled": true,
-    "python.linting.lintOnSave": true,
-    "python.linting.pycodestyleEnabled": false,
-    "python.linting.pylintEnabled": true,
-    "python.formatting.provider": "yapf",
-    "python.formatting.yapfPath": "yapf",
-    "python.formatting.yapfArgs": [
-        "--style",
-        "${workspaceRoot}/setup.cfg"
-    ],
-
-    // terraform
-    "terraform.indexing": {
-        "enabled": false,
-        "liveIndexing": false,
-        "delay": 500,
-        "exclude": [
-            ".terraform/**/*",
-            "**/.terraform/**/*"
-        ]
+    {
+      "name": "JavaScript Yellow",
+      "value": "#f9e64f"
     },
-    "terraform.languageServer": {
-        "enabled": true,
-        "args": []
+    {
+      "name": "Mandalorian Blue",
+      "value": "#1857a4"
     },
-
-    // Git extensions
-    "git.autofetch": true,
-    // @sync os=windows
-    // "gitProjectManager.baseProjectsFolders": [
-    // "c:\\dev"
-    // ],
-    // @sync os=mac
-    "gitProjectManager.baseProjectsFolders": [ "~/dev" ],
-
-    "githubPullRequests.defaultMergeMethod": "rebase",
-
-    "githubNotificationsBell.refreshInterval": 60,
-    "githubNotificationsBell.color": "#f012be",
-    "githubNotificationsBell.hideIfNone": false,
-    "githubNotificationsBell.showNumberOfNotifications": true,
-    "githubNotificationsBell.icon": "comment-discussion",
-
-    // live share
-    "liveshare.audio.joinCallBehavior": "accept",
-    "liveshare.featureSet": "insiders",
-    "liveshare.showInStatusBar": "whileCollaborating",
-
-    // setting sync
-    "sync.autoDownload": true,
-    "sync.autoUpload": true,
-    "sync.forceDownload": false,
-    "sync.forceUpload": true,
-    "sync.gist": "299b1e3d511aa3a12ae069f5af4fe539",
-    "sync.quietSync": false,
-    "sync.removeExtensions": true,
-    "sync.syncExtensions": true,
-
-     // spell check
-    "cSpell.enableFiletypes": [
-      "asciidoc",
-      "c",
-      "cpp",
-      "csharp",
-      "css",
-      "go",
-      "handlebars",
-      "html",
-      "jade",
-      "javascript",
-      "javascriptreact",
-      "latex",
-      "less",
-      "markdown",
-      "php",
-      "plaintext",
-      "pub",
-      "python",
-      "restructuredtext",
-      "rust",
-      "scss",
-      "text",
-      "typescript",
-      "typescriptreact",
-      "yml"
-    ],
-
-    "vsicons.dontShowNewVersionMessage": true,
-    "stylint.alwaysShowStatus": true,
-    "zenMode.hideStatusBar": false
+    {
+      "name": "Node Green",
+      "value": "#215732"
+    },
+    {
+      "name": "React Blue",
+      "value": "#00b3e6"
+    },
+    {
+      "name": "Something Different",
+      "value": "#832561"
+    },
+    {
+      "name": "Vue Green",
+      "value": "#42b883"
+    }
+  ],
+  "python.condaPath": "/Users/stdavis/opt/miniconda3/bin/conda",
+  "python.globalModuleInstallation": true,
+  "python.jediEnabled": false,
+  "sync.autoDownload": true,
+  "sync.autoUpload": true,
+  "sync.forceUpload": true,
+  "sync.gist": "b06512bd1a9a2f639e0eebec8b026b10",
+  "sync.quietSync": true,
+  "terminal.integrated.enableBell": true,
+  "terminal.integrated.fontFamily": "FiraCode-Retina, 'Fira Code Retina'",
+  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.rendererType": "dom",
+  "terminal.integrated.scrollback": 10000,
+  "terminal.integrated.shell.osx": "/bin/zsh",
+  "vim.foldfix": true,
+  "vim.replaceWithRegister": true,
+  "vsicons.dontShowNewVersionMessage": true,
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "window.zoomLevel": 1,
+  "workbench.colorTheme": "Bluloco Light",
+  "workbench.editor.limit.enabled": true,
+  "workbench.editor.limit.perEditorGroup": true,
+  "workbench.editor.limit.value": 4,
+  "workbench.panel.defaultLocation": "right",
+  "workbench.startupEditor": "newUntitledFile"
 }

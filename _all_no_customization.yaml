@@ -63,20 +63,11 @@
 # Terraform CLI
 - import_playbook: terraform/core.yaml
 
-# IRC
-- import_playbook: irc/core.yaml
-
-# window arrangement
-- import_playbook: hammerspoon/core.yaml
-
 # password management
 - import_playbook: lastpass/core.yaml
 
 # vim
 - import_playbook: vim/core.yaml
-
-# music
-- import_playbook: pianobar/core.yaml
 
 ##### Applications (free)
 

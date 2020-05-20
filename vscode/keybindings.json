@@ -1,50 +1,88 @@
-// Place your key bindings in this file to overwrite the defaults
-[
-  {
-    "key": "cmd+d",
-    "command": "editor.action.addSelectionToNextFindMatch",
-    "when": "editorFocus"
-  },
-  {
-    "key": "ctrl+c",
-    "command": "-amVim.ctrl+c",
-    "when": "amVim.configuration.shouldBindCtrlCommands && editorTextFocus"
-  },
-  {
-    "key": "ctrl+j",
-    "command": "-workbench.action.togglePanel"
-  },
-  {
-    "key": "ctrl+j",
-    "command": "editor.action.joinLines"
-  },
-  {
-    "key": "ctrl+shift+d",
-    "command": "editor.action.copyLinesDownAction",
-    "when": "editorTextFocus && !editorReadonly"
-  },
-  {
-    "key": "shift+alt+down",
-    "command": "-editor.action.copyLinesDownAction",
-    "when": "editorTextFocus && !editorReadonly"
-  },
-  {
-    "key": "ctrl+shift+d",
-    "command": "-workbench.view.debug"
-  },
-  {
-    "key": "ctrl+b",
-    "command": "-amVim.ctrl+b",
-    "when": "amVim.configuration.shouldBindCtrlCommands && editorTextFocus && amVim.mode != 'INSERT'"
-  },
-  {
-    "key": "alt+cmd+up",
-    "command": "editor.action.insertCursorAbove",
-    "when": "editorTextFocus && Add Anything Here"
-  },
-  {
-    "key": "alt+cmd+up",
-    "command": "-editor.action.insertCursorAbove",
-    "when": "editorTextFocus"
-  }
+[{
+  "key": "cmd+n",
+  "command": "extension.simpleNewFile"
+},
+{
+  "key": "cmd+k cmd+n",
+  "command": "workbench.action.focusNextGroup"
+},
+{
+  "key": "alt+cmd+=",
+  "command": "workbench.action.increaseViewSize"
+},
+{
+  "key": "alt+cmd+-",
+  "command": "workbench.action.decreaseViewSize"
+},
+{
+  "key": "alt+cmd+a",
+  "command": "workbench.action.closeAllEditors"
+},
+{
+  "key": "cmd+k cmd+w",
+  "command": "-workbench.action.closeAllEditors"
+},
+{
+  "key": "cmd+'",
+  "command": "editor.emmet.action.removeTag"
+},
+{
+  "key": "alt+cmd+j",
+  "command": "editor.action.marker.next",
+  "when": "editorTextFocus && !editorReadonly"
+},
+{
+  "key": "alt+f8",
+  "command": "-editor.action.marker.next",
+  "when": "editorTextFocus && !editorReadonly"
+},
+{
+  "key": "alt+cmd+k",
+  "command": "editor.action.marker.nextInFiles",
+  "when": "editorFocus && !editorReadonly"
+},
+{
+  "key": "f8",
+  "command": "-editor.action.marker.nextInFiles",
+  "when": "editorFocus && !editorReadonly"
+},
+{
+  "key": "cmd+w",
+  "command": "workbench.action.terminal.kill",
+  "when": "terminalFocus"
+},
+{
+  "key": "cmd+]",
+  "command": "workbench.action.terminal.focusNextPane",
+  "when": "terminalFocus"
+},
+{
+  "key": "alt+cmd+down",
+  "command": "-workbench.action.terminal.focusNextPane",
+  "when": "terminalFocus"
+},
+{
+  "key": "cmd+[",
+  "command": "workbench.action.terminal.focusPreviousPane",
+  "when": "terminalFocus"
+},
+{
+  "key": "alt+cmd+up",
+  "command": "-workbench.action.terminal.focusPreviousPane",
+  "when": "terminalFocus"
+},
+{
+  "key": "cmd+d",
+  "command": "workbench.action.terminal.split",
+  "when": "terminalFocus"
+},
+{
+  "key": "cmd+\\",
+  "command": "-workbench.action.terminal.split",
+  "when": "terminalFocus"
+},
+{
+  "key": "shift+cmd+r",
+  "command": "git.stageSelectedRanges"
+}
 ]

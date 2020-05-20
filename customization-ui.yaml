@@ -213,3 +213,50 @@
         type: int
         value: 0
         state: present
+    - name: Ensure software updates daily (macOS)
+      shell:
+        cmd: "defaults write com.apple.SoftwareUpdate ScheduleFrequency -int 1"
+
+    - name: Increase sound quality for Bluetooth headphones/headsets (macOS)
+      shell:
+        cmd: "defaults write com.apple.BluetoothAudioAgent 'Apple Bitpool Min (editable)' -int 40"
+
+    - name: Show file extensions (macOS)
+      shell:
+        cmd: "defaults write NSGlobalDomain AppleShowAllExtensions -bool true"
+
+    - name: No warning for extension change (macOS)
+      shell:
+        cmd: "defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false"
+
+    - name: Skip DS_Store creation (macOS)
+      shell:
+        cmd: "defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true"
+
+    - name: Skip DS_Store creation usb (macOS)
+      shell:
+        cmd: "defaults write com.apple.desktopservices DSDontWriteUSBStores -bool true"
+
+    - name: Disable the Are you sure you want to open this application? dialog (macOS)
+      shell:
+        cmd: "defaults write com.apple.LaunchServices LSQuarantine -bool false"
+
+    - name:  Disable automatic period substitution as it’s annoying when typing code (macOS)
+      shell:
+        cmd: "defaults write NSGlobalDomain NSAutomaticPeriodSubstitutionEnabled -bool false"
+
+    - name: Disable press-and-hold for keys in favor of key repeat (macOS)
+      shell:
+        cmd: "defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false"
+
+    - name: Key Repeat (macOS)
+      shell:
+        cmd: "defaults write NSGlobalDomain KeyRepeat -int 20"
+
+    - name: Faster repeat rate (macOS)
+      shell:
+        cmd: "defaults write NSGlobalDomain InitialKeyRepeat -int 20"
+
+    - name: Disable machine sleep while charging (macOS)
+      shell:
+        cmd: "pmset -c sleep 0"
