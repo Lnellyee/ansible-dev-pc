@@ -260,3 +260,31 @@
     - name: Disable machine sleep while charging (macOS)
       shell:
         cmd: "pmset -c sleep 0"
+
+    - name: Enable three finger dragging
+      shell: |
+        defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadThreeFingerDrag -int 1
+        defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerDrag -int 1
+
+    - name: Show additional menu-bar icons
+      shell: |
+        defaults write com.apple.systemuiserver "NSStatusItem Visible com.apple.menuextra.bluetooth" -int 1
+        defaults write com.apple.systemuiserver menuExtras -array \
+        "/System/Library/CoreServices/Menu Extras/User.menu" \
+        "/System/Library/CoreServices/Menu Extras/Clock.menu" \
+        "/System/Library/CoreServices/Menu Extras/Battery.menu" \
+        "/System/Library/CoreServices/Menu Extras/Bluetooth.menu" \
+        "/System/Library/CoreServices/Menu Extras/Volume.menu"
+
+    - name: Mouse tweaks
+      shell: |
+        defaults write com.apple.driver.AppleBluetoothMultitouch.mouse MouseButtonMode TwoButton
+        defaults write com.apple.driver.AppleBluetoothMultitouch.mouse MouseOneFingerDoubleTapGesture -int 1
+
+    - name: Trackpad tweaks
+      shell:
+        cmd: "defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerTapGesture -int 2"
+
+    - name: Enable tabbing through all controls
+      shell:
+        cmd: "defaults write NSGlobalDomain AppleKeyboardUIMode -int 3"
