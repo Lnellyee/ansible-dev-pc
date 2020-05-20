@@ -11,7 +11,5 @@
       homebrew_cask:
         name: "{{ item }}"
       loop:
-        - font-saucecodepro-nerd-font
-        - font-firacode-nerd-font
-        - font-hasklug-nerd-font
-        - font-iosevka-nerd-font
+        - font-victor-mono
+        - font-fira-code
