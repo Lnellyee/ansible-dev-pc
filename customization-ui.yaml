@@ -175,8 +175,8 @@
     - osx_defaults: # Auto hide dock
         domain: com.apple.dock
         key: autohide
-        type: bool
-        value: true
+        type: int
+        value: 1
         state: present
 
     - osx_defaults: # Tap to click
@@ -193,102 +193,9 @@
         value: 1
         state: present
 
-    - osx_defaults: # Horizontal Swipe Gesture
-        domain: com.apple.AppleMultitouchTrackpad
-        key: TrackpadThreeFingerHorizSwipeGesture
-        type: int
-        value: 0
-        state: present
-
     - osx_defaults: # Verticle Swipe Gesture
         domain: com.apple.AppleMultitouchTrackpad
         key: TrackpadThreeFingerVertSwipeGesture
         type: int
         value: 0
         state: present
-
-    - osx_defaults: # Right edge Swipe Gesture
-        domain: com.apple.AppleMultitouchTrackpad
-        key: TrackpadTwoFingerFromRightEdgeSwipeGesture
-        type: int
-        value: 0
-        state: present
-    - name: Ensure software updates daily (macOS)
-      shell:
-        cmd: "defaults write com.apple.SoftwareUpdate ScheduleFrequency -int 1"
-
-    - name: Increase sound quality for Bluetooth headphones/headsets (macOS)
-      shell:
-        cmd: "defaults write com.apple.BluetoothAudioAgent 'Apple Bitpool Min (editable)' -int 40"
-
-    - name: Show file extensions (macOS)
-      shell:
-        cmd: "defaults write NSGlobalDomain AppleShowAllExtensions -bool true"
-
-    - name: No warning for extension change (macOS)
-      shell:
-        cmd: "defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false"
-
-    - name: Skip DS_Store creation (macOS)
-      shell:
-        cmd: "defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true"
-
-    - name: Skip DS_Store creation usb (macOS)
-      shell:
-        cmd: "defaults write com.apple.desktopservices DSDontWriteUSBStores -bool true"
-
-    - name: Disable the Are you sure you want to open this application? dialog (macOS)
-      shell:
-        cmd: "defaults write com.apple.LaunchServices LSQuarantine -bool false"
-
-    - name:  Disable automatic period substitution as it’s annoying when typing code (macOS)
-      shell:
-        cmd: "defaults write NSGlobalDomain NSAutomaticPeriodSubstitutionEnabled -bool false"
-
-    - name: Disable press-and-hold for keys in favor of key repeat (macOS)
-      shell:
-        cmd: "defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false"
-
-    - name: Key Repeat (macOS)
-      shell:
-        cmd: "defaults write NSGlobalDomain KeyRepeat -int 20"
-
-    - name: Faster repeat rate (macOS)
-      shell:
-        cmd: "defaults write NSGlobalDomain InitialKeyRepeat -int 20"
-
-    - name: Disable machine sleep while charging (macOS)
-      shell:
-        cmd: "pmset -c sleep 0"
-
-    - name: Enable three finger dragging
-      shell: |
-        defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadThreeFingerDrag -int 1
-        defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerDrag -int 1
-
-    - name: Show additional menu-bar icons
-      shell: |
-        defaults write com.apple.systemuiserver "NSStatusItem Visible com.apple.menuextra.bluetooth" -int 1
-        defaults write com.apple.systemuiserver menuExtras -array \
-        "/System/Library/CoreServices/Menu Extras/User.menu" \
-        "/System/Library/CoreServices/Menu Extras/Clock.menu" \
-        "/System/Library/CoreServices/Menu Extras/Battery.menu" \
-        "/System/Library/CoreServices/Menu Extras/Bluetooth.menu" \
-        "/System/Library/CoreServices/Menu Extras/Volume.menu"
-
-    - name: Mouse tweaks
-      shell: |
-        defaults write com.apple.driver.AppleBluetoothMultitouch.mouse MouseButtonMode TwoButton
-        defaults write com.apple.driver.AppleBluetoothMultitouch.mouse MouseOneFingerDoubleTapGesture -int 1
-
-    - name: Trackpad tweaks
-      shell:
-        cmd: "defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerTapGesture -int 2"
-
-    - name: Enable tabbing through all controls
-      shell:
-        cmd: "defaults write NSGlobalDomain AppleKeyboardUIMode -int 3"
-
-    - name: Auto-hide dock
-      shell:
-        cmd: "defaults write com.apple.dock autohide -int 1"
