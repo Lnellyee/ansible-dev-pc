@@ -1,8 +1,0 @@
-- name: Royal
-  hosts: 127.0.0.1
-  connection: local
-
-  tasks:
-    - name: Ensure Royal tsx
-      homebrew_cask:
-        name: royal-tsx

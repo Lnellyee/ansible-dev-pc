@@ -1,6 +1,6 @@
 [user]
-    name = stdavis
-    email = stdavis@utah.gov
+    name = gary
+    email = gary.lee@ihis.com.sg
 [core]
     editor = /usr/local/bin/vim
     autocrlf = input

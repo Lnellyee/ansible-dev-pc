@@ -40,56 +40,19 @@
 - import_playbook: kubectl/core.yaml
 - import_playbook: kubectl/vscode.yaml
 
-# Virtualization
-- import_playbook: virtualization/core.yaml
-
-# Mono (.NET Framework)
-- import_playbook: mono/core.yaml
-- import_playbook: mono/vscode.yaml
-
 # NodeJS
-- import_playbook: nodejs/vscode.yaml
-
-# Postman
-- import_playbook: postman/core.yaml
-
-# Python
-- import_playbook: python/core.yaml
-- import_playbook: python/vscode.yaml
-
-# Google Cloud CLI
-- import_playbook: google-cloud-cli/core.yaml
+- import_playbook: nodejs/core.yaml
 
 # Terraform CLI
 - import_playbook: terraform/core.yaml
-
-# password management
-- import_playbook: lastpass/core.yaml
 
 # vim
 - import_playbook: vim/core.yaml
 
 ##### Applications (free)
 
-# Firefox
-- import_playbook: firefox/core.yaml
-
 # Google Chrome
 - import_playbook: google-chrome/core.yaml
 
-# Google Chat
-- import_playbook: google-chat/core.yaml
-
-# Prettier version of ping w/ graphs
-- import_playbook: prettyping/core.yaml
-
 # Slack desktop application
 - import_playbook: slack/core.yaml
-
-##### Applications (commercial license required)
-
-# alfred
-- import_playbook: alfred/core.yaml
-
-# RDP
-- import_playbook: royal/core.yaml

@@ -10,5 +10,4 @@
       loop:
         - bierner.github-markdown-preview
         - eamodio.gitlens
-        - github.vscode-pull-request-github
         - fabiospampinato.vscode-github-notifications-bell

@@ -1,44 +1,79 @@
 {
-    "editor.tabSize": 2,
-    "files.exclude": {
-      "**/.git": true,
-      "*.retry": true
-    },
-    "files.associations": {
-      "*.yaml": "ansible"
-    },
-    "cSpell.words": [
-      "agrc",
-      "ansible",
-      "arcgis",
-      "ariake",
-      "autofetch",
-      "azuretools",
-      "bierner",
-      "cmder",
-      "conda",
-      "dbaeumer",
-      "eamodio",
-      "envs",
-      "esbenp",
-      "fabiospampinato",
-      "gitlens",
-      "globaltool",
-      "hammerspoon",
-      "irssi",
-      "kohler",
-      "kubectl",
-      "kubernetes",
-      "liveshare",
-      "nuget",
-      "omnisharp",
-      "pianobar",
-      "pycodestyle",
-      "pylint",
-      "reportgenerator",
-      "stylint",
-      "vmsynkov",
-      "vsicons",
-      "yapf"
-    ]
+  "debug.showSubSessionsInToolBar": true,
+  "git.confirmSync": false,
+  "git.enableSmartCommit": true,
+  "explorer.confirmDelete": false,
+  "gitlens.views.repositories.files.layout": "list",
+  "workbench.iconTheme": "vscode-icons",
+  "terminal.integrated.fontFamily": "fira code",
+  "editor.fontFamily": "Fira Code",
+  "editor.fontLigatures": true,
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "explorer.confirmDragAndDrop": false,
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "diffEditor.ignoreTrimWhitespace": false,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "extensions.ignoreRecommendations": false,
+  "files.trimTrailingWhitespace": true,
+  "files.associations": {
+    "*.json": "jsonc",
+    ".env": "ini"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "search.showLineNumbers": true,
+  "search.smartCase": true,
+  "search.useGlobalIgnoreFiles": true,
+  "eslint.alwaysShowStatus": true,
+  "eslint.format.enable": false,
+  "eslint.lintTask.enable": false,
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "debug.onTaskErrors": "showErrors",
+  "debug.toolBarLocation": "docked",
+  "files.exclude": {
+    "**/.DS_Store": false
+  },
+  "git.detectSubmodulesLimit": 15,
+  "vsicons.dontShowNewVersionMessage": true,
+  "workbench.activityBar.visible": true,
+  "omnisharp.organizeImportsOnFormat": true,
+  "omnisharp.enableRoslynAnalyzers": true,
+  "git.autofetch": true,
+  "editor.codeActionsOnSave": {},
+  "vssolution.createTemplateFolderQuestion": false,
+  "terminal.integrated.altClickMovesCursor": false,
+  "workbench.startupEditor": "none",
+  "workbench.colorCustomizations": {
+    "editor.lineHighlightBackground": "#1073cf2d",
+    "editor.lineHighlightBorder": "#9fced11f"
+  },
+  "editor.wordWrap": "off",
+  "diffEditor.wordWrap": "off",
+  "[markdown]": {
+    "editor.wordWrap": "off",
+    "editor.quickSuggestions": false
+  },
+  "emmet.showAbbreviationSuggestions": false,
+  "emmet.excludeLanguages": ["typescriptreact"],
+  "editor.tabSize": 2,
+  "workbench.editor.enablePreview": false,
+  "editor.bracketPairColorization.enabled": true,
+  "i18nJsonEditor.supportedFolders": ["en", "ch", "i18n"],
+  "diffEditor.renderSideBySide": false
 }

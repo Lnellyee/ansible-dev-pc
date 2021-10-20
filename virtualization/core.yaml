@@ -1,8 +1,0 @@
-- name: Virtualization
-  hosts: 127.0.0.1
-  connection: local
-
-  tasks:
-    - name: Ensure Parallels
-      homebrew_cask:
-        name: parallels
