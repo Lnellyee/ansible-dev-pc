@@ -6,3 +6,4 @@
     - name: Install Rectangle
       homebrew_cask:
         name: rectangle
+      state: present

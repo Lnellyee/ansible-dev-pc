@@ -13,7 +13,6 @@
 
 ##### Operating system packages and configuration
 
-- import_playbook: customization-text.yaml
 - import_playbook: customization-ui.yaml
 
 ##### Developer tools
@@ -28,9 +27,6 @@
 
 - import_playbook: git/customization.yaml
 - import_playbook: git/vscode.yaml
-
-- import_playbook: kubernetes/customization.yaml
-- import_playbook: kubernetes/vscode.yaml
 
 ##### This has to be last, because it enables WSL Remote, which breaks installing Code extensions in WSL 2
 

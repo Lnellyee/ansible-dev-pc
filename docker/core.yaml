@@ -10,3 +10,4 @@
     - name: Ensure Docker engine
       homebrew_cask:
         name: docker
+      state: present

@@ -10,6 +10,7 @@
     - name: Ensure custom fonts
       homebrew_cask:
         name: "{{ item }}"
+      state: present
       loop:
         - font-victor-mono
         - font-fira-code

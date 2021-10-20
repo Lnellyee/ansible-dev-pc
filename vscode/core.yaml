@@ -6,3 +6,4 @@
     - name: Ensure VS Code
       homebrew_cask:
         name: visual-studio-code
+      state: present
