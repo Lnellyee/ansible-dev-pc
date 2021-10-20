@@ -4,18 +4,18 @@
 
   vars:
     dotnet_versions:
-      - "3.1.15"
-      - "5.0.10"
+      - "3.1"
+      - "5.0.1xx"
 
   tasks:
     - name: Ensure .NET SDK installer
       get_url:
-        url: https://dot.net/v1/dotnet-install.sh
+        url: https://dotnet.microsoft.com/download/dotnet/scripts/v1/dotnet-install.sh
         dest: /usr/local/bin/dotnet-install
         mode: 0755
 
     - name: Ensure .NET SDK
-      shell: dotnet-install -c {{ item }}
+      shell: dotnet-install -c {{ item }} --arch x64 #.net5 for some reasons doesn't have arm64
       register: dotnet_sdk_installed_mac
       loop: "{{ dotnet_versions }}"
       args:
