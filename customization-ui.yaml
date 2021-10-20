@@ -3,140 +3,160 @@
   connection: local
 
   tasks:
-    - osx_defaults: # Ensure software updates daily
+    - name: Ensure software updates daily
+      osx_defaults:
         domain: com.apple.SoftwareUpdate
         key: ScheduleFrequency
         type: int
         value: 1
         state: present
 
-    - osx_defaults: # Increase sound quality for Bluetooth headphones/headsets
+    - name: Increase sound quality for Bluetooth headphones/headsets
+      osx_defaults:
         domain: com.apple.BluetoothAudioAgent
         key: "Apple Bitpool Min (editable)"
         type: int
         value: 40
         state: present
 
-    - osx_defaults: # Require password after sleep or screen saver begins
+    - name: Require password after sleep or screen saver begins
+      osx_defaults:
         domain: com.apple.screensaver
         key: askForPassword
         type: int
         value: 1
         state: present
 
-    - osx_defaults: # Require password immediately after sleep or screen saver begins
+    - name: Require password immediately after sleep or screen saver begins
+      osx_defaults:
         domain: com.apple.screensaver
         key: askForPasswordDelay
         type: int
         value: 0
         state: present
 
-    - osx_defaults: # Save screenshots to desktop
+    - name: Save screenshots to desktop
+      osx_defaults:
         domain: com.apple.screencapture
         key: location
         type: string
         value: ${HOME}/Desktop
         state: present
 
-    - osx_defaults: # Save screenshots as png
+    - name: Save screenshots as png
+      osx_defaults:
         domain: com.apple.screencapture
         key: type
         type: string
         value: "png"
         state: present
 
-    - osx_defaults: # Change new window target
+    - name: Change new window target
+      osx_defaults:
         domain: com.apple.finder
         key: NewWindowTarget
         type: string
         value: PfDe
         state: present
 
-    - osx_defaults: # Set new window to dev
+    - name: Set new window to dev
+      osx_defaults:
         domain: com.apple.finder
         key: NewWindowTargetPath
         type: string
         value: file://${HOME}/dev/
         state: present
 
-    - osx_defaults: # Show hidden files
+    - name: Show hidden files
+      osx_defaults:
         domain: com.apple.finder
         key: AppleShowAllFiles
         type: bool
         value: true
         state: present
 
-    - osx_defaults: # Show file extensions
+    - name: Show file extensions
+      osx_defaults:
         domain: NSGlobalDomain
         key: AppleShowAllExtensions
         type: bool
         value: true
         state: present
 
-    - osx_defaults: # Search current folder
+    - name: Search current folder
+      osx_defaults:
         domain: com.apple.finder
         key: FXDefaultSearchScope
         type: string
         value: SCcf
         state: present
 
-    - osx_defaults: # No warning for extension change
+    - name: No warning for extension change
+      osx_defaults:
         domain: com.apple.finder
         key: FXEnableExtensionChangeWarning
         type: bool
         value: false
         state: present
 
-    - osx_defaults: # Skip DS_Store creation
+    - name: Skip DS_Store creation
+      osx_defaults:
         domain: com.apple.desktopservices
         key: DSDontWriteNetworkStores
         type: bool
         value: true
         state: present
 
-    - osx_defaults: # Skip DS_Store creation usb
+    - name: Skip DS_Store creation usb
+      osx_defaults:
         domain: com.apple.desktopservices
         key: DSDontWriteUSBStores
         type: bool
         value: true
         state: present
 
-    - osx_defaults: # Empty trash securely
+    - name: Empty trash securely
+      osx_defaults:
         domain: com.apple.finder
         key: EmptyTrashSecurely
         type: bool
         value: true
         state: present
 
-    - osx_defaults: # Disable the Are you sure you want to open this application? dialog
+    - name: Disable the Are you sure you want to open this application? dialog
+      osx_defaults:
         domain: com.apple.LaunchServices
         key: LSQuarantine
         type: bool
         value: false
         state: present
 
-    - osx_defaults: #  Disable automatic period substitution as it’s annoying when typing code
+    - name: Disable automatic period substitution as it’s annoying when typing code
+      osx_defaults:
         domain: NSGlobalDomain
         key: NSAutomaticPeriodSubstitutionEnabled
         type: bool
         value: false
         state: present
 
-    - osx_defaults: # Disable press-and-hold for keys in favor of key repeat
+    - name: Disable press-and-hold for keys in favor of key repeat
+      osx_defaults:
         domain: NSGlobalDomain
         key: ApplePressAndHoldEnabled
         type: bool
         value: false
         state: present
 
-    - osx_defaults: # Key Repeat
+    - name: Key Repeat
+      osx_defaults:
         domain: NSGlobalDomain
         key: KeyRepeat
         type: int
         value: 2
         state: present
 
-    - osx_defaults: # Faster repeat rate
+    - name: Faster repeat rate
+      osx_defaults:
         domain: NSGlobalDomain
         key: InitialKeyRepeat
         type: int
@@ -148,7 +168,8 @@
       shell:
         cmd: "pmset -c sleep 0"
 
-    - osx_defaults: # Speed up mouse
+    - name: Speed up mouse
+      osx_defaults:
         domain: com.apple.mouse
         key: scaling
         type: float
@@ -165,28 +186,32 @@
         - com.apple.driver.AppleBluetoothMultitouch.mouse
         - com.apple.AppleMultitouchMouse
 
-    - osx_defaults: # Auto hide dock
+    - name: Auto hide dock
+      osx_defaults:
         domain: com.apple.dock
         key: autohide
         type: int
         value: 1
         state: present
 
-    - osx_defaults: # Tap to click
+    - name: Tap to click
+      osx_defaults:
         domain: com.apple.AppleMultitouchTrackpad
         key: Clicking
         type: int
         value: 1
         state: present
 
-    - osx_defaults: # Three finger drag
+    - name: Three finger drag
+      osx_defaults:
         domain: com.apple.AppleMultitouchTrackpad
         key: TrackpadThreeFingerDrag
         type: int
         value: 1
         state: present
 
-    - osx_defaults: # Verticle Swipe Gesture
+    - name: Verticle Swipe Gesture
+      osx_defaults:
         domain: com.apple.AppleMultitouchTrackpad
         key: TrackpadThreeFingerVertSwipeGesture
         type: int
