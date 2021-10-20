@@ -4,6 +4,6 @@
 
   tasks:
     - name: Ensure vscode extensions
-      command: code --install-extension vscoss.vscode-ansible
+      command: code --install-extension redhat.ansible
       args:
-        creates: ~/.vscode/extensions/vscoss.vscode-ansible-*/package.json
+        creates: ~/.vscode/extensions/redhat.ansible-*/package.json
