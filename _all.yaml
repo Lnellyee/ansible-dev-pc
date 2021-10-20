@@ -15,6 +15,10 @@
 
 - import_playbook: customization-ui.yaml
 
+##### A/V
+
+- import_playbook: avast/core.yaml
+
 ##### Developer tools
 
 - import_playbook: docker/customization.yaml
