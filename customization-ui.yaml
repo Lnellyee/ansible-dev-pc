@@ -67,14 +67,6 @@
         value: file://${HOME}/dev/
         state: present
 
-    - name: Show hidden files
-      osx_defaults:
-        domain: com.apple.finder
-        key: AppleShowAllFiles
-        type: bool
-        value: true
-        state: present
-
     - name: Show file extensions
       osx_defaults:
         domain: NSGlobalDomain
