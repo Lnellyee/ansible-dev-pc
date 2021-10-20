@@ -21,4 +21,4 @@
     - name: Ensure terminal
       homebrew_cask:
         name: iterm2
-      state: present
+        state: present

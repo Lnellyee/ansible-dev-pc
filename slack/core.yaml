@@ -6,4 +6,4 @@
     - name: Ensure Slack Desktop
       homebrew_cask:
         name: slack
-      state: present
+        state: present
