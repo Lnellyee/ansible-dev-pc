@@ -5,7 +5,7 @@
   vars:
     dotnet_versions:
       - "3.1"
-      - "5.0.1xx"
+      - "5.0"
 
   tasks:
     - name: Ensure .NET SDK installer
