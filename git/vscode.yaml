@@ -10,4 +10,3 @@
       loop:
         - bierner.github-markdown-preview
         - eamodio.gitlens
-        - fabiospampinato.vscode-github-notifications-bell
