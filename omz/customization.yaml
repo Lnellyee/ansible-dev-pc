@@ -9,6 +9,8 @@
         marker: "### {mark} Ansible managed: prompt"
         block: |
           BULLETTRAIN_PROMPT_ORDER=(
+            uptime
+            status
             time
             context
             dir
@@ -16,6 +18,11 @@
             git
             cmd_exec_time
           )
+
+          prompt_uptime(){
+              on=${${${(s: :)"$(uptime)"}[3]}%,}
+              prompt_segment $BULLETTRAIN_TIME_BG $BULLETTRAIN_TIME_FG "[$on]"
+          }
 
           BULLETTRAIN_EXIT_SHOW=true
           BULLETTRAIN_PROMPT_CHAR=❯
@@ -35,8 +42,8 @@
     - name: Ensure extra configuration
       file:
         path: ~/.zshenv
-        state: touch
-        mode: 0744
+        state: file
+        mode: 0700
 
     - name: Ensure extra configuration is used
       blockinfile:
