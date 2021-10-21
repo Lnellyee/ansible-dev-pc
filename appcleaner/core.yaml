@@ -7,4 +7,4 @@
       homebrew_cask:
         name: appcleaner
         state: present
-        accept_external_apps: true
+        accept_external_apps: yes

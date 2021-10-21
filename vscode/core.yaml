@@ -7,4 +7,4 @@
       homebrew_cask:
         name: visual-studio-code
         state: present
-        accept_external_apps: true
+        accept_external_apps: yes

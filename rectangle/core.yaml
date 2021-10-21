@@ -7,4 +7,4 @@
       homebrew_cask:
         name: rectangle
         state: present
-        accept_external_apps: true
+        accept_external_apps: yes
