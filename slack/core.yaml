@@ -7,3 +7,4 @@
       homebrew_cask:
         name: slack
         state: present
+        accept_external_apps: true

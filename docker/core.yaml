@@ -11,3 +11,4 @@
       homebrew_cask:
         name: docker
         state: present
+        accept_external_apps: true

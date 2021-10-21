@@ -7,3 +7,4 @@
       homebrew_cask:
         name: google-chrome
         state: present
+        accept_external_apps: true
