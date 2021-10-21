@@ -8,12 +8,8 @@
         dest: ~/.zshrc
         marker: "### {mark} Ansible managed: prompt"
         block: |
-          # remove name from prompt
-          prompt_context() {}
           BULLETTRAIN_PROMPT_ORDER=(
-            uptime
-            status
-            custom
+            time
             context
             dir
             nvm
@@ -21,10 +17,8 @@
             cmd_exec_time
           )
 
-          prompt_uptime(){
-              on=${${${(s: :)"$(uptime)"}[3]}%,}
-              prompt_segment $BULLETTRAIN_TIME_BG $BULLETTRAIN_TIME_FG "[$on]"
-          }
+          BULLETTRAIN_EXIT_SHOW=true
+          BULLETTRAIN_PROMPT_CHAR=❯
 
     - name: Ensure custom aliases
       blockinfile:

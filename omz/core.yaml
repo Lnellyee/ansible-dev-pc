@@ -24,16 +24,15 @@
 
           antigen bundle z
           antigen bundle brew
+          antigen bundle docker
+          antigen bundle npm
           antigen bundle colorize
           antigen bundle dotnet
           antigen bundle zsh-users/zsh-syntax-highlighting
           antigen bundle zsh-users/zsh-autosuggestions
           antigen bundle lukechilds/zsh-nvm
 
-          # antigen theme https://github.com/caiogondim/bullet-train-oh-my-zsh-theme bullet-train
-          THEME=caiogondim/bullet-train-oh-my-zsh-theme
-          antigen list | grep $THEME; if [ $? -ne 0 ]; then antigen theme $THEME; fi
-
+          antigen theme https://github.com/caiogondim/bullet-train-oh-my-zsh-theme bullet-train
           if [[ "$OSTYPE" == "darwin"* ]]; then
               antigen bundle osx
           fi
