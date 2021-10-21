@@ -41,8 +41,8 @@
     - name: Ensure extra configuration
       file:
         path: ~/.zshenv
-        state: file
-        mode: 0700
+        state: touch
+        mode: 0744
 
     - name: Ensure extra configuration is used
       blockinfile:
