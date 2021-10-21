@@ -38,6 +38,7 @@
           alias dev='deactivate; cd ~/dev; clear'
           alias grep='grep --colour=auto'
           alias ls='ls -GFh'
+          alias ll='ls -la'
 
     - name: Ensure extra configuration
       file:
