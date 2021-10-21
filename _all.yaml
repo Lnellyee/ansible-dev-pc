@@ -32,6 +32,8 @@
 - import_playbook: git/customization.yaml
 - import_playbook: git/vscode.yaml
 
+- import_playbook: omz/customization.yaml
+
 ##### This has to be last, because it enables WSL Remote, which breaks installing Code extensions in WSL 2
 
 - import_playbook: vscode/customization.yaml
