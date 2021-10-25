@@ -32,3 +32,22 @@ ansible-playbook -K _all.yaml --check --diff
 You will be prompted for your password, so that administrative-level software can be installed. _**You must be a sudoer to run these scripts, otherwise the installation process will fail.**_ You can also run individual files if you'd prefer to take more control over what's executed.
 
 Since core OS packages are upgraded, it is safest to reboot the PC/VM after running these scripts. At a bare minimum, many UI shell customizations done here will require you to log out and log back in.
+
+Feel free to fork and make your own preferences
+
+- [x] Making iterm ANSI colors similar VS Code
+- [x] Using Fira Code as default font in ITerm
+
+Installed Apps:
+
+- AppCleaner
+- Docker
+- Dotnet
+- Chrome
+- ITerm2
+- NodeJS
+- Oh My Zsh
+- Rectangle
+- Slack
+- Terraform
+- Vs code
