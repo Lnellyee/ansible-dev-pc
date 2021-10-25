@@ -39,16 +39,3 @@
           alias grep='grep --colour=auto'
           alias ls='ls -GFh'
           alias ll='ls -la'
-
-    - name: Ensure extra configuration
-      file:
-        path: ~/.zshenv
-        state: file
-        mode: 0700
-
-    - name: Ensure extra configuration is used
-      blockinfile:
-        dest: ~/.zshrc
-        marker: "### {mark} Ansible managed: env"
-        block: |
-          source ~/.zshenv

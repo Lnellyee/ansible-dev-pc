@@ -4,19 +4,14 @@ This repository contains useful scripts to set up a mac development machine. The
 
 | OS                                    | SKU     | Version(s) |
 | ------------------------------------- | ------- | ---------- |
-| [macOS](https://www.apple.com/macos/) | Desktop | 10.15      |
+| [macOS](https://www.apple.com/macos/) | Desktop | 11.6       |
 
 ## Pre-Requisites
 
 ### macOS
 
 1. Install [Homebrew](https://docs.brew.sh/)
-1. Install [Ansible](https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html#installing-ansible-on-macos)
-1. Add secrets
-
-   ```bash
-   echo "export GITHUB_NOTIFICATIONS_TOKEN=" >> ~/.zshenv
-   ```
+1. Install [Ansible] `brew install ansible`
 
 ## Running
 

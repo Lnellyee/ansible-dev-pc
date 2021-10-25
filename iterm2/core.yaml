@@ -1,12 +1,14 @@
-- name: Ensure terminal
+- name: Ensure ITerm2
   hosts: 127.0.0.1
   connection: local
 
   tasks:
-    - name: Install terminal
+    - name: Install iterm2
       homebrew_cask:
         name: iterm2
         state: present
         accept_external_apps: yes
     - name: install theme
       shell: open {{ playbook_dir }}/vscodeDarkPlus.itermcolors
+    - name: set font for iterm
+      shell: /usr/libexec/PlistBuddy -c "Set :\"New Bookmarks\":0:\"Normal Font\" \"FiraCode-Regular 12\""  ~/Library/Preferences/com.googlecode.iterm2.plist
