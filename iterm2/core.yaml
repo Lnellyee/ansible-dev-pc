@@ -1,0 +1,12 @@
+- name: Ensure terminal
+  hosts: 127.0.0.1
+  connection: local
+
+  tasks:
+    - name: Install terminal
+      homebrew_cask:
+        name: iterm2
+        state: present
+        accept_external_apps: yes
+    - name: install theme
+      shell: open {{ playbook_dir }}/vscodeDarkPlus.itermcolors

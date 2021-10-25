@@ -17,9 +17,3 @@
         - bat
         - htop
         - jq
-
-    - name: Ensure terminal
-      homebrew_cask:
-        name: iterm2
-        state: present
-        accept_external_apps: yes

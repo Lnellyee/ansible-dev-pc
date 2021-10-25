@@ -155,19 +155,19 @@
         value: 25
         state: present
 
-    - name: Disable machine sleep while charging
-      become: yes
-      shell:
-        cmd: "pmset -c sleep 0"
+    # - name: Disable machine sleep while charging
+    #   become: yes
+    #   shell:
+    #     cmd: "pmset -c sleep 0"
 
-    - name: Speed up mouse
-      osx_defaults:
-        domain: com.apple.mouse
-        key: scaling
-        type: float
-        value: 2.5
-        state: present
-      become: yes
+    # - name: Speed up mouse
+    #   osx_defaults:
+    #     domain: com.apple.mouse
+    #     key: scaling
+    #     type: float
+    #     value: 2.5
+    #     state: present
+    #   become: yes
 
     - name: enable right click. mouse
       osx_defaults:
