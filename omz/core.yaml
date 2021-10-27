@@ -32,7 +32,7 @@
           antigen bundle zsh-users/zsh-autosuggestions
           antigen bundle lukechilds/zsh-nvm
 
-          THEME=romakatv/powerlevel10k
+          THEME=romkatv/powerlevel10k
           antigen list | grep $THEME; if [ $? -ne 0 ]; then antigen theme $THEME; fi
           if [[ "$OSTYPE" == "darwin"* ]]; then
               antigen bundle osx

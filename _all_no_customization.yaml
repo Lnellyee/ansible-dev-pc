@@ -49,6 +49,12 @@
 # vim
 - import_playbook: vim/core.yaml
 
+# ITerm2
+- import_playbook: iterm2/core.yaml
+
+# Rectangle
+- import_playbook: rectangle/core.yaml
+
 ##### Applications (free)
 
 # Google Chrome

@@ -6,8 +6,8 @@
   "explorer.confirmDelete": false,
   "gitlens.views.repositories.files.layout": "list",
   "workbench.iconTheme": "vscode-icons",
-  "terminal.integrated.fontFamily": "FiraCode-Retina, 'Fira Code Retina'",
-  "editor.fontFamily": "'Victor Mono', 'Fira Code Retina', 'Consolas'",
+  "terminal.integrated.fontFamily": "'MesloLGS NF', 'Fira Code', 'monospace'",
+  "editor.fontFamily": "'Fira Code', 'Consolas'",
   "editor.fontLigatures": true,
   "diffEditor.ignoreTrimWhitespace": false,
   "typescript.updateImportsOnFileMove.enabled": "always",
@@ -41,7 +41,6 @@
   "omnisharp.organizeImportsOnFormat": true,
   "omnisharp.enableRoslynAnalyzers": true,
   "git.autofetch": true,
-  "editor.codeActionsOnSave": {},
   "vssolution.createTemplateFolderQuestion": false,
   "terminal.integrated.altClickMovesCursor": false,
   "workbench.startupEditor": "none",
@@ -60,12 +59,12 @@
   "blockman.n03MaxDepth": 3,
   "blockman.n04ColorComboPreset": "Classic Dark 1 (Solid colors)",
   "emmet.showAbbreviationSuggestions": false,
-  "emmet.excludeLanguages": ["typescriptreact"],
   "editor.tabSize": 2,
   "workbench.editor.enablePreview": false,
   "window.nativeTabs": true,
   "security.workspace.trust.untrustedFiles": "open",
   "editor.bracketPairColorization.enabled": true,
   "i18nJsonEditor.supportedFolders": ["en", "ch", "i18n"],
-  "diffEditor.renderSideBySide": false
+  "diffEditor.renderSideBySide": false,
+  "redhat.telemetry.enabled": true
 }
