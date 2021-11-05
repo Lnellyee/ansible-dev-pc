@@ -64,6 +64,7 @@
   "window.nativeTabs": true,
   "security.workspace.trust.untrustedFiles": "open",
   "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": true,
   "i18nJsonEditor.supportedFolders": ["en", "ch", "i18n"],
   "diffEditor.renderSideBySide": false,
   "redhat.telemetry.enabled": true
