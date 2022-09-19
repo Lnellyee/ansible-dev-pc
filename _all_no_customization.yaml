@@ -19,18 +19,18 @@
 ##### Developer tools
 
 # Visual Studio Code
-- import_playbook: vscode/core.yaml
+# - import_playbook: vscode/core.yaml
 
 # Ansible
-- import_playbook: ansible/vscode.yaml
+# - import_playbook: ansible/vscode.yaml
 
 # Docker
-- import_playbook: docker/core.yaml
-- import_playbook: docker/vscode.yaml
+# - import_playbook: docker/core.yaml
+# - import_playbook: docker/vscode.yaml
 
 # .NET Core
-- import_playbook: dotnet/core.yaml
-- import_playbook: dotnet/vscode.yaml
+# - import_playbook: dotnet/core.yaml
+# - import_playbook: dotnet/vscode.yaml
 
 # git
 - import_playbook: git/core.yaml
@@ -41,7 +41,7 @@
 - import_playbook: kubectl/vscode.yaml
 
 # NodeJS
-- import_playbook: nodejs/core.yaml
+# - import_playbook: nodejs/core.yaml
 
 # Terraform CLI
 - import_playbook: terraform/core.yaml
@@ -58,7 +58,7 @@
 ##### Applications (free)
 
 # Google Chrome
-- import_playbook: google-chrome/core.yaml
+# - import_playbook: google-chrome/core.yaml
 
 # Slack desktop application
-- import_playbook: slack/core.yaml
+# - import_playbook: slack/core.yaml
